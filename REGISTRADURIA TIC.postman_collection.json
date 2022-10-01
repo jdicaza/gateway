@@ -1,0 +1,2992 @@
+{
+	"info": {
+		"_postman_id": "baca48dc-c4a2-4483-8452-38dfc67fdbf8",
+		"name": "REGISTRADURIA TIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21997303"
+	},
+	"item": [
+		{
+			"name": "RESULTADOS_BE",
+			"item": [
+				{
+					"name": "Partidos",
+					"item": [
+						{
+							"name": "postPartido",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\" : \"Partido MinTIC\",\n    \"lema\" : \"Aprendes o Aprendes\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/partido",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allPartidos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/partidos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idPartido",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/partido/4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partido",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putPartido",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\" : \"Pacto Historico\",\n    \"lema\" : \"Colombia Puede\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/partido/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partido",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePartido",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/partido/3",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"partido",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Mesas",
+					"item": [
+						{
+							"name": "postMesa",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 18,\n    \"cant_inscritos\" : 800\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/mesa",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allMesas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/mesas",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idMesa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/mesa/8",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesa",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putMesa",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cant_inscritos\" : 2003\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/mesa/258",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesa",
+										"258"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteMesa",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/mesa/259",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"mesa",
+										"259"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Candidatos",
+					"item": [
+						{
+							"name": "postCandidato",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cedula\" : \"5555\",\n    \"nombre\" : \"Pedro\",\n    \"apellido\" : \"Martinez\",\n    \"numlista\" : 5,\n    \"idpartido\" : 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/candidato",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidato"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allCandidatos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/candidatos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idCandidato",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/candidato/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidato",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putCandidato",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cedula\" : \"4444\",\n    \"nombre\" : \"Karen\",\n    \"apellido\" : \"Arias\",\n    \"numlista\" : 4,\n    \"idpartido\" : 3\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/candidato/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidato",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCandidato",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/candidato/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"candidato",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Resultados",
+					"item": [
+						{
+							"name": "postResultado",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 48,\n    \"idcandidato\" : 7\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/resultado",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allResultados",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/resultados",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idResultado",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/resultado/12",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultado",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putResultado",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 1,\n    \"idcandidato\" : 2\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/resultado/4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"resultado",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reportes",
+					"item": [
+						{
+							"name": "allVotos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/reportes",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"reportes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idVotosCandidato",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/reportes/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"reportes",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allVotosCandidatos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/reportes/candidatos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"reportes",
+										"candidatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "votosGanador",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 1,\n    \"idcandidato\" : 2\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/reportes/ganador",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"reportes",
+										"ganador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allVotosPartido",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 1,\n    \"idcandidato\" : 2\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/reportes/votospartidos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"reportes",
+										"votospartidos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SEGURIDAD_BE",
+			"item": [
+				{
+					"name": "Roles",
+					"item": [
+						{
+							"name": "allRoles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwMjY0NSwianRpIjoiODcwNTQ1YzEtMjNiNS00ZGY3LWE0MWItMDQ1NTYwMDE3MTU1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjAyNjQ1LCJleHAiOjE2NjQ2ODkwNDV9.rf1Dnx4JKnAdTmqurfZCrOLxZQBOpWFMc3sRyzh7Kpg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/roles",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idRol",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/roles/632bcc664b0ae04b3d392f2f",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"roles",
+										"632bcc664b0ae04b3d392f2f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postRol",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"nombre\": \"jurados\",\n        \"descripcion\": \"jurados de votación\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/roles",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putRol",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"nombre\": \"jurado\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/roles/63375ae1cdd1bc3b25cfacbb",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"roles",
+										"63375ae1cdd1bc3b25cfacbb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRol",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/roles/63294daceccb1a6b6bbf0e13",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"roles",
+										"63294daceccb1a6b6bbf0e13"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Permisos",
+					"item": [
+						{
+							"name": "allPermisos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allPermisos-roles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idPermiso",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos/633521ae7ac42f1d4a47c08a",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos",
+										"633521ae7ac42f1d4a47c08a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postPermiso",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"url\": \"/usuario/?\",\n        \"metodo\": \"PUT\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putPermiso",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"url\": \"/usuario/?\",\n        \"metodo\": \"DELETE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos/633539187ac42f1d4a47c090",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos",
+										"633539187ac42f1d4a47c090"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePermiso",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos/63354dc77ac42f1d4a47c096",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos",
+										"63354dc77ac42f1d4a47c096"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Permisos-Roles",
+					"item": [
+						{
+							"name": "allPermisos-Roles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allValidarPermisos-Roles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"url\": \"/candidatos\",\n        \"metodo\": \"GET\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles/validar-permiso/rol/632944b055f02b3af200f07a",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles",
+										"validar-permiso",
+										"rol",
+										"632944b055f02b3af200f07a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idPermiso-Roles",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles/63354f9a7ac42f1d4a47c099",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles",
+										"63354f9a7ac42f1d4a47c099"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postPermiso-Roles",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles/rol/632944b055f02b3af200f07a/permiso/633824078e21bd549522fee3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles",
+										"rol",
+										"632944b055f02b3af200f07a",
+										"permiso",
+										"633824078e21bd549522fee3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putPermiso-Roles",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles/63354f9a7ac42f1d4a47c099/rol/632944b055f02b3af200f07a/permiso/6337ce6c3e31ba6cfe27f27b",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles",
+										"63354f9a7ac42f1d4a47c099",
+										"rol",
+										"632944b055f02b3af200f07a",
+										"permiso",
+										"6337ce6c3e31ba6cfe27f27b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePermiso-Roles",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/permisos-roles/6337da9d0578b43d96475a34",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"permisos-roles",
+										"6337da9d0578b43d96475a34"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuarios",
+					"item": [
+						{
+							"name": "allUsuarios",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/usuarios",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idUsuario",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/usuarios/6337b9cf3e31ba6cfe27f278",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"usuarios",
+										"6337b9cf3e31ba6cfe27f278"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postUsuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seudonimo\": \"usuario8\",\n    \"correo\": \"usuario8@mail.com\",\n    \"contrasena\": \"usuario8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/usuarios",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postUsuarioLogin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"correo\": \"usuario8@mail.com\",\n    \"contrasena\": \"usuario8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postUsuarioValidar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"correo\": \"usuario8@mail.com\",\n    \"contrasena\": \"usuario8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/usuarios/validar",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"usuarios",
+										"validar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putUsuario",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seudonimo\": \"usuario8\",\n    \"correo\": \"usuario88@mail.com\",\n    \"contrasena\": \"usuario8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/usuarios/63375532e45c614eb2e3faa5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"usuarios",
+										"63375532e45c614eb2e3faa5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putUsuario-Rol",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seudonimo\": \"usuario8\",\n    \"correo\": \"usuario88@mail.com\",\n    \"contrasena\": \"usuario8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/usuarios/6337b9cf3e31ba6cfe27f278/rol/632944b055f02b3af200f07a",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"usuarios",
+										"6337b9cf3e31ba6cfe27f278",
+										"rol",
+										"632944b055f02b3af200f07a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteUsuario",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/usuarios/633783283e31ba6cfe27f277",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"usuarios",
+										"633783283e31ba6cfe27f277"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GATEWAY",
+			"item": [
+				{
+					"name": "Partidos",
+					"item": [
+						{
+							"name": "postPartido",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\" : \"Partido Sueno\",\n    \"lema\" : \"Hace mucho Sueno\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/partido",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"partido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allPartidos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/partidos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idPartido",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/partido/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"partido",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putPartido",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\" : \"Pacto Historico\",\n    \"lema\" : \"Colombia si Puede\"\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/partido/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"partido",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePartido",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/partido/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"partido",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Mesas",
+					"item": [
+						{
+							"name": "postMesa",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 28,\n    \"cant_inscritos\" : 880\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/mesa",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"mesa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allMesas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/mesas",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"mesas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idMesa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/mesa/18",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"mesa",
+										"18"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteMesa",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/mesa/28",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"mesa",
+										"28"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putMesa",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cant_inscritos\" : 888\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/mesa/18",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"mesa",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Candidatos",
+					"item": [
+						{
+							"name": "postCandidato",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cedula\" : \"9999\",\n    \"nombre\" : \"Juan\",\n    \"apellido\" : \"de Dios\",\n    \"numlista\" : 2,\n    \"idpartido\" : 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/candidato",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"candidato"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allCandidatos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwMjY0NSwianRpIjoiODcwNTQ1YzEtMjNiNS00ZGY3LWE0MWItMDQ1NTYwMDE3MTU1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjAyNjQ1LCJleHAiOjE2NjQ2ODkwNDV9.rf1Dnx4JKnAdTmqurfZCrOLxZQBOpWFMc3sRyzh7Kpg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"url\": \"/candidato\",\n    \"metodo\": \"GET\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/candidatos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"candidatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idCandidato",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDU5NTA0MCwianRpIjoiNDg3MjNjZmMtNjg5NS00ZDliLWFhZDYtY2QzMzk2Y2VjZWNkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM1MDhjMWQ1MGVlMjJlYjNhMWY2YzEiLCJzZXVkb25pbW8iOiJwcnVlYmE4NiIsImNvcnJlbyI6InBydWViYTg2QGhvdG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NTk1MDQwLCJleHAiOjE2NjQ2ODE0NDB9.G9xpJJbKeeN_dYSXaqOOjcGikAwSi4Rwq3xX4tibOAM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/candidato/7",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"candidato",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putCandidato",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cedula\" : \"9999\",\n    \"nombre\" : \"Juan\",\n    \"apellido\" : \"de Dios\",\n    \"numlista\" : 28,\n    \"idpartido\" : 1\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/candidato/9",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"candidato",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCandidato",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/candidato/8",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"candidato",
+										"8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Resultados",
+					"item": [
+						{
+							"name": "postResultado",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 48,\n    \"idcandidato\" : 7\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/resultado",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"resultado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idResultado",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/resultado/12",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"resultado",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putResultado",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 1,\n    \"idcandidato\" : 5\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/resultado/4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"resultado",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reportes",
+					"item": [
+						{
+							"name": "idVotosCandidato",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/reportes/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"reportes",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allVotosCandidatos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/reportes/candidatos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"reportes",
+										"candidatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "votosGanador",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 1,\n    \"idcandidato\" : 2\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/reportes/ganador",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"reportes",
+										"ganador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allVotosPartido",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idmesa\" : 1,\n    \"idcandidato\" : 2\n}"
+								},
+								"url": {
+									"raw": "127.0.0.1:7777/reportes/votospartidos",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"reportes",
+										"votospartidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "allVotos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9999/reportes",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"reportes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuarios",
+					"item": [
+						{
+							"name": "allUsuarios",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDU5NTA0MCwianRpIjoiNDg3MjNjZmMtNjg5NS00ZDliLWFhZDYtY2QzMzk2Y2VjZWNkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM1MDhjMWQ1MGVlMjJlYjNhMWY2YzEiLCJzZXVkb25pbW8iOiJwcnVlYmE4NiIsImNvcnJlbyI6InBydWViYTg2QGhvdG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NTk1MDQwLCJleHAiOjE2NjQ2ODE0NDB9.G9xpJJbKeeN_dYSXaqOOjcGikAwSi4Rwq3xX4tibOAM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"url\": \"/usuarios\",\n    \"metodo\": \"GET\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/usuarios",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "idUsuario",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/usuario/632959fad955fd46f2b5bcb5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"usuario",
+										"632959fad955fd46f2b5bcb5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postUsuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seudonimo\": \"usuario88\",\n    \"correo\": \"usuario88@mail.com\",\n    \"contrasena\": \"usuario88\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/usuario",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postUsuarioLogin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"correo\": \"usuario88@mail.com\",\n    \"contrasena\": \"usuario8\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putUsuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwMjY0NSwianRpIjoiODcwNTQ1YzEtMjNiNS00ZGY3LWE0MWItMDQ1NTYwMDE3MTU1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjAyNjQ1LCJleHAiOjE2NjQ2ODkwNDV9.rf1Dnx4JKnAdTmqurfZCrOLxZQBOpWFMc3sRyzh7Kpg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seudonimo\": \"usuario88\",\n    \"correo\": \"usuario88@mail.com\",\n    \"contrasena\": \"usuario88\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/usuarios/6337d2d50578b43d96475a31",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"usuarios",
+										"6337d2d50578b43d96475a31"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteUsuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYwNjQ5MSwianRpIjoiMjY5OTM3YWUtY2U2YS00ZDUzLWE0NTktZDIxYWQ0NGRhNDk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzM3YjljZjNlMzFiYTZjZmUyN2YyNzgiLCJzZXVkb25pbW8iOiJ1c3VhcmlvOCIsImNvcnJlbyI6InVzdWFyaW84QG1haWwuY29tIiwiY29udHJhc2VuYSI6IiIsInJvbCI6eyJfaWQiOiI2MzI5NDRiMDU1ZjAyYjNhZjIwMGYwN2EiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwiZGVzY3JpcGNpb24iOiJNYW5lam8gZGUgbGEgcGxhdGFmb3JtYSJ9fSwibmJmIjoxNjY0NjA2NDkxLCJleHAiOjE2NjQ2OTI4OTF9.PMJBNotkIZnSYmW9uoRwsxsu9-j7jf_OsGyJ9vP3zKo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:7777/usuarios/6337b9cf3e31ba6cfe27f278",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "7777",
+									"path": [
+										"usuarios",
+										"6337b9cf3e31ba6cfe27f278"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
